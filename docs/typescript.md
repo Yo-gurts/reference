@@ -1185,17 +1185,17 @@ function Dog(prop:CeProps): JSX.Element {
 <!--rehype:wrap-class=col-span-2-->
 
 ```tsx
-interface MenuProps extends React.LiHTMLAttributes<HTMLUListElement> { ... }
-const InternalMenu = (props: MenuProps, ref?: React.ForwardedRef<HTMLUListElement>) => (
+interface MenuProps extends React.LiHTMLAttributes<HTMLUListElement> { ... };
+const InternalMenu = React.forwardRef<HTMLUListElement, MenuProps>((props, ref) => (
   <ul {...props} ref={ref} />
-);
-type MenuComponent = React.FC<React.PropsWithRef<MenuProps>> & {
+));
+
+type MenuComponent = typeof InternalMenu & {
   Item: typeof MenuItem;    // MenuItem 函数组件
   SubMenu: typeof SubMenu;  // SubMenu 函数组件
 };
-const Menu: MenuComponent = React.forwardRef<HTMLUListElement>(
-  InternalMenu
-) as unknown as MenuComponent;
+
+const Menu: MenuComponent = InternalMenu as unknown as MenuComponent;
 
 Menu.Item = MenuItem;
 Menu.SubMenu = SubMenu;
@@ -1289,6 +1289,20 @@ export interface ProgressProps extends React.DetailedHTMLProps<React.HTMLAttribu
 export const Progress: FC<PropsWithRef<ProgressProps>> = forwardRef<HTMLDivElement>(InternalProgress)
 ```
 
+### 组件 'as' 属性
+<!--rehype:wrap-class=col-span-3-->
+
+```tsx
+import React, { ElementType, ComponentPropsWithoutRef } from "react";
+
+export const Link = <T extends ElementType<any> = "a">(props: { as?: T; } & ComponentPropsWithoutRef<T>) => {
+  const Comp = props.as || "a";
+  return <Comp {...props}></Comp>;
+};
+```
+
+允许传入自定义 `React` 组件，或 `div`, `a` 标签
+
 各种各样的技巧
 ---
 
@@ -1312,13 +1326,32 @@ type SomeBigInt = "100" extends `${infer U extends bigint}` ? U : never;
 ### keyof 取 interface 的键
 
 ```ts
-interface Point {
-    x: number;
-    y: number;
-}
+interface Point { x: number; y: number; }
  
 // type keys = "x" | "y"
 type keys = keyof Point;
+
+type Arrayish = {
+    [n: number]: unknown;
+};
+type A = keyof Arrayish; 
+// type A = number
+```
+
+### 两个数组合并成一个新类型
+<!--rehype:wrap-class=col-span-2 row-span-2-->
+
+```ts
+const named = ["aqua", "aquamarine", "azure"] as const;
+const hex = ["#00FFFF", "#7FFFD4", "#F0FFFF"] as const;
+
+type Colors = {
+  [key in (typeof named)[number]]: (typeof hex)[number];
+};
+// Colors = {
+//   aqua: "#00FFFF" | "#7FFFD4" | "#F0FFFF"; 
+//   .... 
+// }
 ```
 
 ### 索引签名
@@ -1329,6 +1362,13 @@ interface NumberOrString {
   length: number;
   name: string;
 }
+```
+
+### 只读元组类型
+
+```ts
+const point = [3, 4] as const
+// type 'readonly [3, 4]'
 ```
 
 ### 从数组中提取类型
@@ -1342,15 +1382,8 @@ type PointDetail = Data[number];
 ```
 <!--rehype:className=wrap-text-->
 
-### 只读元组类型
-
-```ts
-const point = [3, 4] as const
-// type 'readonly [3, 4]'
-```
-
 ### satisfies
-<!--rehype:wrap-class=row-span-2-->
+<!--rehype:wrap-class=row-span-3-->
 
 `satisfies` 允许将验证表达式的类型与某种类型匹配，而无需更改该表达式的结果类型。
 
@@ -1389,12 +1422,13 @@ const redComponent = palette.red.at(0)
 <!--rehype:className=wrap-text-->
 
 ### 范型实例化表达式
-<!--rehype:wrap-class=row-span-2-->
+<!--rehype:wrap-class=row-span-3-->
 
 不使用的情况下：
 
 ```ts
-const errorMap: Map<string, Error> = new Map()
+const errorMap: Map<string, Error> 
+        = new Map()
 // 或者使用 type 定义别名
 type ErrorMapType = Map<string, Error>
 ```
@@ -1423,7 +1457,8 @@ function makeHammerBox(hammer: Hammer) {
   return makeBox(hammer);
 }
 // or...
-const makeWrenchBox: (wrench: Wrench) => Box<Wrench> = makeBox;
+const makeWrenchBox: (wrench: Wrench) 
+    => Box<Wrench> = makeBox;
 ```
 
 使用：
@@ -1444,6 +1479,43 @@ declare global {
 export interface FancyOption {
   fancinessLevel: number;
 }
+```
+
+### 获取数组元素的类型
+
+```ts
+const MyArray = [
+  { name: "Alice", age: 15 },
+  { name: "Bob", age: 23 },
+  { name: "Eve", age: 38 },
+];
+ 
+type Person = typeof MyArray[number];
+// type Person = {
+//   name: string;
+//   age: number;
+// }
+
+type Age = typeof MyArray[number]["age"];
+// type Age = number
+
+type Age2 = Person["age"];
+// type Age2 = number
+```
+
+### 范型推导出列表字面量
+<!--rehype:wrap-class=col-span-2-->
+
+```ts
+const a = <T extends string>(t: T) => t;
+const b = <T extends number>(t: T) => t;
+const c = <T extends boolean>(t: T) => t;
+const d = a("a");  // const d: 'a'
+const e = a(1);    // const d: 1
+const f = a(true); // const d: true
+
+const g = <T extends string[]>(t: [...T]) => t;  // 这里t的类型用了一个展开运算
+const h = g(["111", "222"]);  // 类型变成["111", "222"]了
 ```
 
 .d.ts 模版

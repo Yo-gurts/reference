@@ -1468,6 +1468,17 @@ html {
 
 [点击我](#入门)页面会平滑滚动到入门
 
+### 修改浏览器自动填充 input 样式
+
+```css
+input[type="text"]:autofill {
+  box-shadow: 0 0 0 1000px #000 inset;
+  -webkit-text-fill-color: white;
+}
+```
+
+另见: [:autofill](https://developer.mozilla.org/en-US/docs/Web/CSS/:autofill)
+
 ### 忽略用作间距的换行符 \<br />
 
 ```css
@@ -1909,6 +1920,42 @@ ul > li:not(:last-child)::after {
 ```
 
 使列表项看起来像一个真实的逗号分隔列表，使用 `:not()` 伪类，最后一项不会添加逗号
+
+### 图片对齐不变形
+
+```css
+img {
+  width: 200px;
+  height: 200px;
+  /** 确保图片按原始宽高比例进行缩放 */
+  object-fit: cover;
+  object-position: left top;
+  transition: 1s;
+}
+img:hover {
+  /** 指定图片显示的位置，结合鼠标移动+过渡动画 */
+  object-position: right bottom;
+}
+```
+
+### 多行截断，展示省略号
+
+```css
+.clamp {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+```
+
+`html` 文本超过 3 行将被截断，显示省略号...
+
+```html
+<p class="clamp">
+  展示多行文本，超过 3 行将被截断，显示省略号...
+</p>
+```
 
 另见
 ---------

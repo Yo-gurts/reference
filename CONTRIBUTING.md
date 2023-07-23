@@ -66,13 +66,13 @@ Contributing 贡献
 ### 提示配置
 
 ```markdown
-[Django](./docs/djiango.md)<!--rehype:style=background: rgb(12 75 51/var(\-\-bg\-opacity));&class=contributing-->
+[Django](./docs/django.md)<!--rehype:style=background: rgb(12 75 51/var(\-\-bg\-opacity));&class=contributing-->
 ```
 
 添加 `contributing` 类名，会在卡片下方添加 _`👆待完善需要您的参与`_，添加 `data-info=👆看看还缺点儿什么？`，更换默认提示文本。
 
 ```markdown
-[Django](./docs/djiango.md)<!--rehype:style=background: rgb(12 75 51/var(\-\-bg\-opacity));&class=tag&data-lang=Python-->
+[Django](./docs/django.md)<!--rehype:style=background: rgb(12 75 51/var(\-\-bg\-opacity));&class=tag&data-lang=Python-->
 ```
 
 添加 `class=tag&data-lang=Python` 类名和参数，会在卡片右上角标记 _`Python`_
@@ -213,14 +213,14 @@ jobs:
 <!--GAMFC--><a href="https://github.com/jaywcjlove" title="小弟调调">
   <img src="https://avatars.githubusercontent.com/u/1680273?v=4" width="42;" alt="小弟调调"/>
 </a>
-<a href="https://github.com/fwqaaq" title="fw_qaq">
-  <img src="https://avatars.githubusercontent.com/u/82551626?v=4" width="42;" alt="fw_qaq"/>
+<a href="https://github.com/fwqaaq" title="fwqaaq">
+  <img src="https://avatars.githubusercontent.com/u/82551626?v=4" width="42;" alt="fwqaaq"/>
 </a>
 <a href="https://github.com/mofelee" title="mofelee">
   <img src="https://avatars.githubusercontent.com/u/5069410?v=4" width="42;" alt="mofelee"/>
 </a>
-<a href="https://github.com/JeffersonHuang" title="Jefferson">
-  <img src="https://avatars.githubusercontent.com/u/47512530?v=4" width="42;" alt="Jefferson"/>
+<a href="https://github.com/JeffersonHuang" title="Jefferson Huang">
+  <img src="https://avatars.githubusercontent.com/u/47512530?v=4" width="42;" alt="Jefferson Huang"/>
 </a>
 <a href="https://github.com/Alex-Programer" title="Alex">
   <img src="https://avatars.githubusercontent.com/u/115539090?v=4" width="42;" alt="Alex"/>
@@ -234,14 +234,26 @@ jobs:
 <a href="https://github.com/eryajf" title="二丫讲梵">
   <img src="https://avatars.githubusercontent.com/u/33259379?v=4" width="42;" alt="二丫讲梵"/>
 </a>
-<a href="https://github.com/LiuYuan-SHU" title="Liuyuan">
-  <img src="https://avatars.githubusercontent.com/u/96400967?v=4" width="42;" alt="Liuyuan"/>
+<a href="https://github.com/heStudio-Network" title="醉、倾城">
+  <img src="https://avatars.githubusercontent.com/u/119711513?v=4" width="42;" alt="醉、倾城"/>
+</a>
+<a href="https://github.com/LiuYuan-SHU" title="Yuan Liu">
+  <img src="https://avatars.githubusercontent.com/u/96400967?v=4" width="42;" alt="Yuan Liu"/>
 </a>
 <a href="https://github.com/chaos-cn" title="chaos">
   <img src="https://avatars.githubusercontent.com/u/71205599?v=4" width="42;" alt="chaos"/>
 </a>
-<a href="https://github.com/heStudio-Network" title="醉、倾城">
-  <img src="https://avatars.githubusercontent.com/u/119711513?v=4" width="42;" alt="醉、倾城"/>
+<a href="https://github.com/aixcyi" title="砹小翼">
+  <img src="https://avatars.githubusercontent.com/u/75880483?v=4" width="42;" alt="砹小翼"/>
+</a>
+<a href="https://github.com/MarioMang" title="MarioMang">
+  <img src="https://avatars.githubusercontent.com/u/3959555?v=4" width="42;" alt="MarioMang"/>
+</a>
+<a href="https://github.com/qyl27" title="秋 雨落">
+  <img src="https://avatars.githubusercontent.com/u/53731501?v=4" width="42;" alt="秋 雨落"/>
+</a>
+<a href="https://github.com/dadatom" title="Da Da">
+  <img src="https://avatars.githubusercontent.com/u/33886943?v=4" width="42;" alt="Da Da"/>
 </a>
 <a href="https://github.com/XYZscratcher" title="XYZ">
   <img src="https://avatars.githubusercontent.com/u/108533817?v=4" width="42;" alt="XYZ"/>
@@ -264,11 +276,11 @@ jobs:
 <a href="https://github.com/catcto" title="喵仙人">
   <img src="https://avatars.githubusercontent.com/u/5467932?v=4" width="42;" alt="喵仙人"/>
 </a>
+<a href="https://github.com/itldg" title="老大哥">
+  <img src="https://avatars.githubusercontent.com/u/13432299?v=4" width="42;" alt="老大哥"/>
+</a>
 <a href="https://github.com/Country-If" title="Maylon">
   <img src="https://avatars.githubusercontent.com/u/62837275?v=4" width="42;" alt="Maylon"/>
-</a>
-<a href="https://github.com/qyl27" title="秋 雨落">
-  <img src="https://avatars.githubusercontent.com/u/53731501?v=4" width="42;" alt="秋 雨落"/>
 </a>
 <a href="https://github.com/13812700839" title="花殇">
   <img src="https://avatars.githubusercontent.com/u/58072506?v=4" width="42;" alt="花殇"/>
@@ -276,8 +288,8 @@ jobs:
 <a href="https://github.com/dousha0w0" title="dousha0w0">
   <img src="https://avatars.githubusercontent.com/u/52566311?v=4" width="42;" alt="dousha0w0"/>
 </a>
-<a href="https://github.com/Brid9e" title="Brid9e">
-  <img src="https://avatars.githubusercontent.com/u/85558909?v=4" width="42;" alt="Brid9e"/>
+<a href="https://github.com/Brid9e" title="Joe">
+  <img src="https://avatars.githubusercontent.com/u/85558909?v=4" width="42;" alt="Joe"/>
 </a>
 <a href="https://github.com/ch3nnn" title="陈通">
   <img src="https://avatars.githubusercontent.com/u/40114564?v=4" width="42;" alt="陈通"/>
@@ -287,6 +299,9 @@ jobs:
 </a>
 <a href="https://github.com/Damao2250" title="Damao">
   <img src="https://avatars.githubusercontent.com/u/19251992?v=4" width="42;" alt="Damao"/>
+</a>
+<a href="https://github.com/dasferco" title="Dasferco">
+  <img src="https://avatars.githubusercontent.com/u/92622404?v=4" width="42;" alt="Dasferco"/>
 </a>
 <a href="https://github.com/demigodliu" title="DemigodLiu">
   <img src="https://avatars.githubusercontent.com/u/30372735?v=4" width="42;" alt="DemigodLiu"/>
@@ -302,6 +317,9 @@ jobs:
 </a>
 <a href="https://github.com/Ding-Kyoma" title="HooinKyoma">
   <img src="https://avatars.githubusercontent.com/u/44542198?v=4" width="42;" alt="HooinKyoma"/>
+</a>
+<a href="https://github.com/ljq" title="Jack Liu">
+  <img src="https://avatars.githubusercontent.com/u/7278286?v=4" width="42;" alt="Jack Liu"/>
 </a>
 <a href="https://github.com/jasnzhuang" title="Jason Zhuang">
   <img src="https://avatars.githubusercontent.com/u/16612921?v=4" width="42;" alt="Jason Zhuang"/>
@@ -339,11 +357,20 @@ jobs:
 <a href="https://github.com/PipecraftNet" title="Pipecraft">
   <img src="https://avatars.githubusercontent.com/u/88728670?v=4" width="42;" alt="Pipecraft"/>
 </a>
-<a href="https://github.com/QDelta" title="Jianxing Qin">
-  <img src="https://avatars.githubusercontent.com/u/60222316?v=4" width="42;" alt="Jianxing Qin"/>
+<a href="https://github.com/sevenleave" title="Poirot Hercule">
+  <img src="https://avatars.githubusercontent.com/u/24411140?v=4" width="42;" alt="Poirot Hercule"/>
+</a>
+<a href="https://github.com/QDelta" title="QDelta">
+  <img src="https://avatars.githubusercontent.com/u/60222316?v=4" width="42;" alt="QDelta"/>
+</a>
+<a href="https://github.com/RivailleF" title="RivailleF">
+  <img src="https://avatars.githubusercontent.com/u/93083015?v=4" width="42;" alt="RivailleF"/>
 </a>
 <a href="https://github.com/qinxiongzhou" title="Ryan Zhou">
   <img src="https://avatars.githubusercontent.com/u/33239096?v=4" width="42;" alt="Ryan Zhou"/>
+</a>
+<a href="https://github.com/YLee9527" title="Terry Young">
+  <img src="https://avatars.githubusercontent.com/u/18697332?v=4" width="42;" alt="Terry Young"/>
 </a>
 <a href="https://github.com/whb1998a" title="WHB">
   <img src="https://avatars.githubusercontent.com/u/44045064?v=4" width="42;" alt="WHB"/>
@@ -351,14 +378,20 @@ jobs:
 <a href="https://github.com/BATTLEHAWK00" title="While True: learn()">
   <img src="https://avatars.githubusercontent.com/u/45313304?v=4" width="42;" alt="While True: learn()"/>
 </a>
-<a href="https://github.com/hi-liyan" title="Yan Li">
-  <img src="https://avatars.githubusercontent.com/u/40056492?v=4" width="42;" alt="Yan Li"/>
+<a href="https://github.com/hi-liyan" title="嘉木旅人">
+  <img src="https://avatars.githubusercontent.com/u/40056492?v=4" width="42;" alt="嘉木旅人"/>
+</a>
+<a href="https://github.com/Yo-gurts" title="Yogurt">
+  <img src="https://avatars.githubusercontent.com/u/44612841?v=4" width="42;" alt="Yogurt"/>
 </a>
 <a href="https://github.com/dfshizhiqiang" title="Zech">
   <img src="https://avatars.githubusercontent.com/u/7030019?v=4" width="42;" alt="Zech"/>
 </a>
 <a href="https://github.com/yikuaibro" title="yikuaibro">
   <img src="https://avatars.githubusercontent.com/u/44493045?v=4" width="42;" alt="yikuaibro"/>
+</a>
+<a href="https://github.com/zhu0629" title="Zhu">
+  <img src="https://avatars.githubusercontent.com/u/13188450?v=4" width="42;" alt="Zhu"/>
 </a>
 <a href="https://github.com/Leaderzhangyi" title="ZinkCas">
   <img src="https://avatars.githubusercontent.com/u/46915666?v=4" width="42;" alt="ZinkCas"/>
@@ -372,8 +405,8 @@ jobs:
 <a href="https://github.com/chyok" title="chyok">
   <img src="https://avatars.githubusercontent.com/u/32629225?v=4" width="42;" alt="chyok"/>
 </a>
-<a href="https://github.com/gaoxiaoduan" title="coderduan">
-  <img src="https://avatars.githubusercontent.com/u/69953511?v=4" width="42;" alt="coderduan"/>
+<a href="https://github.com/gaoxiaoduan" title="Jerrod Cole">
+  <img src="https://avatars.githubusercontent.com/u/69953511?v=4" width="42;" alt="Jerrod Cole"/>
 </a>
 <a href="https://github.com/cool9203" title="cool9203">
   <img src="https://avatars.githubusercontent.com/u/29609607?v=4" width="42;" alt="cool9203"/>
@@ -387,14 +420,17 @@ jobs:
 <a href="https://github.com/gi-b716" title="gi-b716">
   <img src="https://avatars.githubusercontent.com/u/78394473?v=4" width="42;" alt="gi-b716"/>
 </a>
-<a href="https://github.com/godotc" title="godotc">
-  <img src="https://avatars.githubusercontent.com/u/79260851?v=4" width="42;" alt="godotc"/>
+<a href="https://github.com/godotc" title="godot42">
+  <img src="https://avatars.githubusercontent.com/u/79260851?v=4" width="42;" alt="godot42"/>
 </a>
 <a href="https://github.com/greyhao" title="greyhao">
   <img src="https://avatars.githubusercontent.com/u/107107440?v=4" width="42;" alt="greyhao"/>
 </a>
 <a href="https://github.com/sunny0826" title="Xudong Guo">
   <img src="https://avatars.githubusercontent.com/u/24563928?v=4" width="42;" alt="Xudong Guo"/>
+</a>
+<a href="https://github.com/gzttcydxx" title="gzttcydxx">
+  <img src="https://avatars.githubusercontent.com/u/50025185?v=4" width="42;" alt="gzttcydxx"/>
 </a>
 <a href="https://github.com/hua03" title="hua03">
   <img src="https://avatars.githubusercontent.com/u/19561959?v=4" width="42;" alt="hua03"/>
@@ -405,8 +441,8 @@ jobs:
 <a href="https://github.com/hweining" title="hweining">
   <img src="https://avatars.githubusercontent.com/u/8973985?v=4" width="42;" alt="hweining"/>
 </a>
-<a href="https://github.com/auroraslot" title="irony">
-  <img src="https://avatars.githubusercontent.com/u/48817882?v=4" width="42;" alt="irony"/>
+<a href="https://github.com/auroraslot" title="Tang Weize">
+  <img src="https://avatars.githubusercontent.com/u/48817882?v=4" width="42;" alt="Tang Weize"/>
 </a>
 <a href="https://github.com/joyfully-W" title="joyfully-W">
   <img src="https://avatars.githubusercontent.com/u/32212924?v=4" width="42;" alt="joyfully-W"/>
@@ -419,6 +455,9 @@ jobs:
 </a>
 <a href="https://github.com/genius-kim" title="kim">
   <img src="https://avatars.githubusercontent.com/u/119488561?v=4" width="42;" alt="kim"/>
+</a>
+<a href="https://github.com/kubeme" title="kubernetes for me">
+  <img src="https://avatars.githubusercontent.com/u/16346220?v=4" width="42;" alt="kubernetes for me"/>
 </a>
 <a href="https://github.com/larry-xue" title="larry">
   <img src="https://avatars.githubusercontent.com/u/48818060?v=4" width="42;" alt="larry"/>
@@ -441,8 +480,14 @@ jobs:
 <a href="https://github.com/Mowmowj" title="shelton">
   <img src="https://avatars.githubusercontent.com/u/24759562?v=4" width="42;" alt="shelton"/>
 </a>
-<a href="https://github.com/wjjwkwindy" title="wjjwkwindy">
-  <img src="https://avatars.githubusercontent.com/u/9508591?v=4" width="42;" alt="wjjwkwindy"/>
+<a href="https://github.com/swift-fs" title="swift">
+  <img src="https://avatars.githubusercontent.com/u/77133741?v=4" width="42;" alt="swift"/>
+</a>
+<a href="https://github.com/wannima66" title="tmen">
+  <img src="https://avatars.githubusercontent.com/u/26410255?v=4" width="42;" alt="tmen"/>
+</a>
+<a href="https://github.com/wjjwkwindy" title="Hudson Alen">
+  <img src="https://avatars.githubusercontent.com/u/9508591?v=4" width="42;" alt="Hudson Alen"/>
 </a>
 <a href="https://github.com/xing133" title="xing133">
   <img src="https://avatars.githubusercontent.com/u/5336490?v=4" width="42;" alt="xing133"/>
@@ -456,8 +501,8 @@ jobs:
 <a href="https://github.com/LuckyJie12" title="夜未央">
   <img src="https://avatars.githubusercontent.com/u/102901105?v=4" width="42;" alt="夜未央"/>
 </a>
-<a href="https://github.com/ZIDOUZI" title="子斗子">
-  <img src="https://avatars.githubusercontent.com/u/53157536?v=4" width="42;" alt="子斗子"/>
+<a href="https://github.com/ZIDOUZI" title="ZIDOUZI">
+  <img src="https://avatars.githubusercontent.com/u/53157536?v=4" width="42;" alt="ZIDOUZI"/>
 </a>
 <a href="https://github.com/lisheng741" title="芦荟柚子茶">
   <img src="https://avatars.githubusercontent.com/u/53617305?v=4" width="42;" alt="芦荟柚子茶"/>
@@ -467,6 +512,9 @@ jobs:
 </a>
 <a href="https://github.com/qwxingzhe" title="行者">
   <img src="https://avatars.githubusercontent.com/u/7071651?v=4" width="42;" alt="行者"/>
+</a>
+<a href="https://github.com/Zeng-qh" title="都一样">
+  <img src="https://avatars.githubusercontent.com/u/40046415?v=4" width="42;" alt="都一样"/>
 </a><!--GAMFC-END-->
 
 上图贡献者列表，由 [contributors](https://github.com/jaywcjlove/github-action-contributors) 自动生成贡献者图片。
